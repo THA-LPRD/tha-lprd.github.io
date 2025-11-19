@@ -28,9 +28,9 @@ jobs:
           # package-manager: pnpm@latest # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
           # build-cmd: pnpm run build # The command to run to build your site. Runs the package build script/task by default. (optional)
         env:
-          SKIP_KEYSTATIC=true
-          ASTRO_DB_REMOTE_URL=""
-          ASTRO_DB_APP_TOKEN=""
+          SKIP_KEYSTATIC: true
+          ASTRO_DB_REMOTE_URL: ''
+          ASTRO_DB_APP_TOKEN: ''
           # PUBLIC_POKEAPI: 'https://pokeapi.co/api/v2' # Use single quotation marks for the variable value. (optional)
 
   deploy:
