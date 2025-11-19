@@ -21,18 +21,18 @@ const socialImage = `${Astro.site}social.png`; // Path to the default social sha
 const defaultSchema: WithContext<Thing> = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  inLanguage: "en-US",
+  inLanguage: "de-DE",
   "@id": Astro.url.href,
   url: Astro.url.href,
-  name: "DataNova",
+  name: "LPRD Display",
   description:
-    "Unlock powerful data insights with DataNova's advanced analytics suite for Excel. Visualize, analyze, and make data-driven decisions in minutes with seamless Excel integration, AI-powered analysis, and predictive forecasting models.",
+    "Effiziente Signage Lösungen",
   isPartOf: {
     "@type": "WebSite",
     url: `${Astro.site}`,
-    name: "DataNova",
+    name: "LPRD Display",
     description:
-      "DataNova Analytics Inc. provides advanced analytics for Excel to help businesses unlock actionable insights quickly with no coding required.",
+      "Effiziente Signage Lösungen",
   },
 };
 ---
@@ -42,27 +42,27 @@ const defaultSchema: WithContext<Thing> = {
     {/* SEO Meta Tags */}
     <SEO
       charset="utf-8"
-      title={seo?.title ?? "DataNova"}
+      title={seo?.title ?? "LPRD Display"}
       description={seo?.description ??
-        "Unlock powerful data insights with DataNova's advanced analytics suite for Excel. Visualize, analyze, and make data-driven decisions in minutes with seamless Excel integration, AI-powered analysis, and predictive forecasting models."}
+        "Effiziente Signage Lösungen"}
       openGraph={{
         basic: {
-          title: "DataNova - Unlock Insights from Your Excel Data",
+          title: "LPRD Display",
           type: "website",
           image: socialImage,
         },
         optional: {
           description:
-            "Transform your Excel workspace with DataNova's powerful analytics suite. Get insights, predictive models, and visualizations in minutes with no coding required.",
+            "Effiziente Signage Lösungen",
         },
       }}
       twitter={{
         card: "summary_large_image",
-        title: "DataNova - Unlock Insights from Your Excel Data",
+        title: "LPRD Display",
         description:
-          "Transform your Excel workspace with DataNova's powerful analytics suite. Visualize and analyze data quickly with no coding required.",
+          "Effiziente Signage Lösungen",
         image: socialImage,
-        imageAlt: "DataNova Logo.",
+        imageAlt: "LPRD Display Logo.",
       }}
       extend={{
         link: [
