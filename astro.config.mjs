@@ -18,7 +18,7 @@ export default defineConfig({
   // site: "https://tha-lprd.github.io",
   // base: "/homepage",
   prefetch: true,
-  trailingSlash: "never",
+  trailingSlash: "ignore",
   experimental: {
     clientPrerender: true,
   },
