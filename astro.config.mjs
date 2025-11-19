@@ -14,9 +14,9 @@ const isDev = process.env.NODE_ENV === "development"
 export default defineConfig({
   // The `site` property specifies the base URL for your site.
   // Be sure to update this to your own domain (e.g., "https://yourdomain.com") before deploying.
-  // site: "https://lprd-display.com",
-  site: "https://tha-lprd.github.io",
-  base: "/homepage",
+  site: "https://lprd-display.com",
+  // site: "https://tha-lprd.github.io",
+  // base: "/homepage",
   prefetch: true,
   trailingSlash: "never",
   experimental: {
