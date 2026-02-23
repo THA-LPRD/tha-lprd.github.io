@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "@layout/BaseLayout.astro";
-import Icon from "@ui/icons/Icon.astro";
-import PostFeedback from "@common/PostFeedback.svelte";
+// import Icon from "@ui/icons/Icon.astro";
+// import PostFeedback from "@common/PostFeedback.svelte";
 import { formatDate } from "@utils/utils";
 import { getReadingTime } from "@utils/reading-time";
 import { getEntry, render } from "astro:content";
@@ -31,7 +31,7 @@ const { Content, headings } = await render(post);
 
 const validHeadings = headings.filter((heading) => heading.depth === 2);
 const readingTime = getReadingTime(post.body ?? "");
-const slug = id;
+// const slug = id;
 ---
 
 <BaseLayout>
@@ -84,7 +84,7 @@ const slug = id;
           >
             <Content />
           </section>
-          <PostFeedback
+          <!-- <PostFeedback
             client:only="svelte"
             title="Was this post helpful?"
             firstChoice="Yes"
@@ -103,7 +103,7 @@ const slug = id;
                 class="transition duration-300 group-hover:translate-y-1 group-focus-visible:translate-y-1"
               />
             </svelte:fragment>
-          </PostFeedback>
+          </PostFeedback> -->
         </div>
       </div>
     </div>
